@@ -1,0 +1,58 @@
+/*
+    INSTRUCTIONS
+
+    PART 1: CSS
+
+    Using CSS properties alone, recreate the button on the page. 
+    */
+body {
+    padding: 0 20px;
+}
+a {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px;
+    border-radius:8px;
+    color:#676869;
+    font-weight: 700;
+    margin: 2px;
+    outline: 2px solid #676869;
+    position: relative;
+    width: 200px;
+    height: 20px;
+    font-size: 24px;
+    line-height: 20px;
+    background: linear-gradient(#d7d7d7 50%, #b7b7b7 50%);  
+    box-shadow: 0 1px 3px 1px #777777, 0 0 0 9px #cbcbcb, 0 0 0 12px #fff, 0 0 0 14px #676869;
+}
+
+a::before {
+    content: '';
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-image: url(https://www.podomatic.com/assets/homebase/icon-star-64091d94372b5effa95e1f6f8d07846e.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+a::after {
+    content: '';
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: -160px;
+    background-image: url(https://www.podomatic.com/assets/homebase/icon-star-64091d94372b5effa95e1f6f8d07846e.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+div:last-of-type {
+    margin-inline-start: 30px;
+}
